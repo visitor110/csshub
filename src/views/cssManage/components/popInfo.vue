@@ -4,6 +4,8 @@
 
     </div>
     <div class="pop-dialog">
+      <span class="username">pt</span>
+      <span class="title">demo</span>
 
     </div>
   </div>
@@ -13,7 +15,9 @@
   export default {
     name: "popInfo",
     data() {
-      return {}
+      return {
+
+      }
     },
     methods: {}
   }
@@ -25,13 +29,11 @@
   @box-width: 250px;
 
 
-  /*.pop-box {*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*position: relative;*/
-  /*}*/
+  .pop-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 
   .pop-img, .pop-dialog {
     width: @box-width;
@@ -44,14 +46,26 @@
   }
 
   .pop-dialog {
+    display: none;
     position: absolute;
     top: @box-height;
     background: #000;
     opacity: .5;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: flex-start;*/
+
+    .username, .title{
+      padding: 30px;
+       color: #fff;
+      font-size: 14px;
+    }
+
   }
 
-  .pop-img:hover {
+  .pop-img:after  {
     .pop-dialog{
+      display: flex;
       background: red;
     }
   }
