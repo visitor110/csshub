@@ -1,18 +1,31 @@
 <template>
   <div>
     <pop-info/>
+
     <div class="triangle"/>
 
     <div class="circle circle1">
       <div class="circle circle2">
-
       </div>
     </div>
+
+    <!-- hover 图标移动-->
+    <button-fly class="my-components"/>
+
+    <!-- hover 流光-->
+    <button-flow class="my-components"/>
+
+    <!-- 箭头拨水效果-->
+    <mouse-wave class="my-components"/>
+
   </div>
 </template>
 
 <script>
   import PopInfo from './components/popInfo'
+  import ButtonFly from './components/button-fly'
+  import ButtonFlow from './components/button-flow'
+  import MouseWave from './components/mouse-wave'
 
   export default {
     name: "cssManage",
@@ -20,13 +33,20 @@
       return {}
     },
     components: {
-      PopInfo
+      PopInfo,
+      ButtonFly,
+      ButtonFlow,
+      MouseWave
     },
     methods: {}
   }
 </script>
 
 <style lang="less" scoped>
+
+  .my-components {
+    margin-top: 15px;
+  }
 
   .triangle {
     height: 0;
@@ -51,7 +71,7 @@
 
   .circle2 {
     position: absolute;
-    animation: circleScale 2s infinite .2s ;
+    animation: circleScale 2s infinite .2s;
   }
 
   @keyframes circleScale {
