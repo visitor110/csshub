@@ -15,8 +15,11 @@
     <!-- hover 流光-->
     <button-flow class="my-components"/>
 
-    <!-- 箭头拨水效果-->
+    <!-- 鼠标拨水效果-->
     <mouse-wave class="my-components"/>
+
+    <!--边框流动-->
+    <border-flow class="my-components"/>
 
   </div>
 </template>
@@ -26,6 +29,7 @@
   import ButtonFly from './components/button-fly'
   import ButtonFlow from './components/button-flow'
   import MouseWave from './components/mouse-wave'
+  import BorderFlow from './components/border-flow'
 
   export default {
     name: "cssManage",
@@ -36,7 +40,8 @@
       PopInfo,
       ButtonFly,
       ButtonFlow,
-      MouseWave
+      MouseWave,
+      BorderFlow
     },
     methods: {}
   }

@@ -38,9 +38,6 @@
     height: 150px;
     background: linear-gradient(90deg, darkorange);
     border-radius: 20px;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
     box-shadow: 0 0 3px rgba(0,0,0,1);
   }
 
@@ -58,7 +55,7 @@
 
   @keyframes wave {
     100% {
-      transform: scale(3);
+      transform: scale(2);
       opacity: 0;
     }
   }
