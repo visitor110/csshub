@@ -67,7 +67,6 @@
     width: 50px;
     border-radius: 50%;
     background-color: green;
-
   }
 
   .circle1 {

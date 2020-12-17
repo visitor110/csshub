@@ -63,11 +63,8 @@
 
   }
 
-  .pop-img:after  {
-    .pop-dialog{
-      display: flex;
-      background: red;
-    }
+  .pop-img::after:hover  {
+    content: 'fwaf';
   }
 
 
