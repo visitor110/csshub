@@ -21,6 +21,12 @@
     <!--边框流动-->
     <border-flow class="my-components"/>
 
+    <!--进度条-->
+    <jindutiao/>
+
+    <circle-loading/>
+
+
   </div>
 </template>
 
@@ -30,6 +36,8 @@
   import ButtonFlow from './components/button-flow'
   import MouseWave from './components/mouse-wave'
   import BorderFlow from './components/border-flow'
+  import jindutiao from './components/jindutiao'
+  import circleLoading from './components/circleLoading'
 
   export default {
     name: "cssManage",
@@ -41,7 +49,9 @@
       ButtonFly,
       ButtonFlow,
       MouseWave,
-      BorderFlow
+      BorderFlow,
+      jindutiao,
+      circleLoading
     },
     methods: {}
   }
